@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker run --entrypoint bash -v "$PWD/renovate.json":/pwd/renovate.json renovate/renovate:slim renovate-config-validator /pwd/renovate.jsonCC
+      - run: docker run --entrypoint bash -v "$PWD/renovate.json":/pwd/renovate.json renovate/renovate:slim renovate-config-validator /pwd/renovate.json
