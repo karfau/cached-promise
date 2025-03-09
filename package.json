@@ -7,9 +7,9 @@
     "dev": "deno test --watch",
     "test": "deno test 'src/**/*.test.ts'",
     "test:node": "node --import tsx --test 'src/**/*.test.ts'",
-    "types": "tsc",
-    "format": "prettier --write",
-    "format:check": "prettier",
+    "types": "deno check '**/*.ts'",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepare": "husky"
