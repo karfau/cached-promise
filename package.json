@@ -1,15 +1,15 @@
 {
   "name": "cached-promise",
   "version": "0.1.0",
-  "description": "",
+  "description": "subscribe to changes to the state of promises over time and cache the result of async calls",
   "main": "src/index.ts",
   "scripts": {
     "dev": "deno test --watch",
     "test": "deno test 'src/**/*.test.ts'",
     "test:node": "node --import tsx --test 'src/**/*.test.ts'",
-    "types": "tsc",
-    "format": "prettier --write",
-    "format:check": "prettier",
+    "types": "deno check '**/*.ts'",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepare": "husky"
@@ -51,8 +51,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.json": "prettier --write",
-    "*.md": "prettier --write"
+    "*": "prettier --write"
   },
   "type": "module",
   "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",

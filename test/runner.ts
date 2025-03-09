@@ -21,21 +21,22 @@ usePlugin(SinonPlugin);
 
 // eslint-disable-next-line @typescript-eslint/no-inferrable-types
 export const isDeno: boolean = !!globalThis.Deno;
-export const describe = (message: string, fn: () => void) => {
+type Fn = () => void;
+export const describe = (message: string, fn: Fn): void => {
   if (isDeno) {
     describeD(message, fn);
   } else {
     void describeN(message, fn);
   }
 };
-export const it = (message: string, fn: () => void): void => {
+export const it = (message: string, fn: Fn): void => {
   if (isDeno) {
     itD(message, fn);
   } else {
     void itN(message, fn);
   }
 };
-export const before = isDeno ? beforeD : beforeN;
-export const beforeEach = isDeno ? beforeEachD : beforeEachN;
-export const after = isDeno ? afterD : afterN;
-export const afterEach = isDeno ? afterEachD : afterEachN;
+export const before: (fn: Fn) => void = isDeno ? beforeD : beforeN;
+export const beforeEach: (fn: Fn) => void = isDeno ? beforeEachD : beforeEachN;
+export const after: (fn: Fn) => void = isDeno ? afterD : afterN;
+export const afterEach: (fn: Fn) => void = isDeno ? afterEachD : afterEachN;
