@@ -24,6 +24,7 @@ jobs:
       - run: pnpm format:check
 
   publish:
+    if: github.event_name == 'push' && github.ref_name == 'main'
     needs: test
     runs-on: ubuntu-latest
     permissions:
@@ -32,4 +33,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm i --production --frozen-lockfile
       - run: deno publish
