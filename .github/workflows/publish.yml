@@ -40,5 +40,5 @@ jobs:
         with:
           node-version-file: .node-version
           cache: pnpm
-      - run: pnpm i --production --frozen-lockfile
+      - run: pnpm i --production --frozen-lockfile --ignore-scripts
       - run: deno publish
