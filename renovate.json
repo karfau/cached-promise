@@ -1,5 +1,54 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "github>karfau/renovate-config:javascript"],
+  "extends": [
+    "config:recommended",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":separateMajorReleases",
+    ":separateMultipleMajorReleases",
+    "preview:dockerVersions",
+    "customManagers:dockerfileVersions",
+    "npm:unpublishSafe",
+    ":pinAllExceptPeerDependencies",
+    ":maintainLockFilesMonthly"
+  ],
+  "internalChecksFilter": "strict",
+  "prConcurrentLimit": 1,
+  "updateNotScheduled": false,
+  "configMigration": true,
+  "dependencyDashboardTitle": "Dependencies Dashboard (Renovate Bot)",
+  "dependencyDashboardFooter": "- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository\n- The renovate logs can be found at <https://developer.mend.io>",
+  "osvVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "schedule": ["before 8am"],
+    "prConcurrentLimit": 3
+  },
+  "addLabels": ["dependencies"],
+  "packageRules": [
+    {"matchUpdateTypes": ["pin"], "prPriority": 10, "automerge": true},
+    {"matchUpdateTypes": ["major"], "dependencyDashboardApproval": true},
+    {"matchPackageNames": ["node"], "rangeStrategy": "replace"},
+    {
+      "groupName": "nodejs",
+      "matchPackageNames": ["node", "nodejs", "@types/node"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {"matchDepTypes": ["resolutions"], "rangeStrategy": "auto"},
+    {
+      "matchPackageNames": ["typescript"],
+      "separateMinorPatch": true,
+      "separateMultipleMinor": true,
+      "prPriority": 2
+    },
+    {
+      "matchPackageNames": ["/^@types/.*/"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "minimumReleaseAge": null,
+      "prPriority": -5,
+      "automerge": true
+    }
+  ],
   "schedule": ["at any time"]
 }
