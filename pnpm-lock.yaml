@@ -49,8 +49,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       jsr:
-        specifier: 0.13.3
-        version: 0.13.3
+        specifier: 0.13.4
+        version: 0.13.4
       lint-staged:
         specifier: 15.4.3
         version: 15.4.3
@@ -1045,8 +1045,8 @@ packages:
     resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
     hasBin: true
 
-  jsr@0.13.3:
-    resolution: {integrity: sha512-iPt9r1lMK8BIdGwLP9/PslqkP8HoU3tn3c26qrQlavC6sgqy7lbJk0wLHbrbKZCD5a7RIomvTivvJTFQrvkIPQ==}
+  jsr@0.13.4:
+    resolution: {integrity: sha512-GJ9Ju8kf2SxH90C1AqANrMKBFlDjrZu1YoFm4SoMCOBOxix3Bvirdg5JB31gbF8FwPBo3196dAaqV0WUjeuq8Q==}
     hasBin: true
 
   just-extend@6.2.0:
@@ -2575,7 +2575,7 @@ snapshots:
     dependencies:
       minimist: 1.2.8
 
-  jsr@0.13.3:
+  jsr@0.13.4:
     dependencies:
       kolorist: 1.8.0
       node-stream-zip: 1.15.0
