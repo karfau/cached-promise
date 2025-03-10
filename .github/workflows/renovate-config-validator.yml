@@ -12,4 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker run --entrypoint bash -v "$PWD/renovate.json":/pwd/renovate.json renovate/renovate:slim renovate-config-validator /pwd/renovate.json
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm --package renovate dlx renovate-config-validator
