@@ -29,7 +29,7 @@
     "@types/node": "22.13.4",
     "@types/sinon": "17.0.4",
     "eslint": "9.22.0",
-    "eslint-import-resolver-typescript": "3.8.4",
+    "eslint-import-resolver-typescript": "3.8.7",
     "eslint-plugin-import": "2.31.0",
     "husky": "9.1.7",
     "jsr": "0.13.4",
