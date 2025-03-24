@@ -26,7 +26,7 @@
     "@eslint/js": "9.22.0",
     "@std/testing": "npm:@jsr/std__testing@1.0.9",
     "@types/lodash": "4.17.16",
-    "@types/node": "22.13.11",
+    "@types/node": "22.13.13",
     "@types/sinon": "17.0.4",
     "eslint": "9.22.0",
     "eslint-import-resolver-typescript": "3.9.1",
