@@ -25,8 +25,8 @@ importers:
         specifier: 9.23.0
         version: 9.23.0
       '@std/testing':
-        specifier: npm:@jsr/std__testing@1.0.9
-        version: '@jsr/std__testing@1.0.9'
+        specifier: npm:@jsr/std__testing@1.0.15
+        version: '@jsr/std__testing@1.0.15'
       '@types/lodash':
         specifier: 4.17.16
         version: 4.17.16
@@ -162,26 +162,26 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@jsr/std__assert@1.0.11':
-    resolution: {integrity: sha512-sNXyi9EQA4f/9F3gI1t+Dz+LnvPwCC3JDUqn9YfWl7IK7RRipiHOkDpV8Vq3LL/ZDZF8Tcr36zVhuEOrRs8i+g==, tarball: https://npm.jsr.io/~/11/@jsr/std__assert/1.0.11.tgz}
+  '@jsr/std__assert@1.0.14':
+    resolution: {integrity: sha512-BcjBimpxuy7mXjWo7sZ3TtPitx91w3UqssyY92RmJIuoMGYywZRGxaxqK9/oybljbZbZpPOSrkgQI9wKpgZ9vQ==, tarball: https://npm.jsr.io/~/11/@jsr/std__assert/1.0.14.tgz}
 
-  '@jsr/std__async@1.0.11':
-    resolution: {integrity: sha512-CadfBR/MfKbBNaRrOYAU54LmiH20+DC5eVUDzWOr8z5iqqAtWyDfvEqpZInLipk93ZnwMq8apPPj2M/bqncn4A==, tarball: https://npm.jsr.io/~/11/@jsr/std__async/1.0.11.tgz}
+  '@jsr/std__async@1.0.14':
+    resolution: {integrity: sha512-aIG8W3TOmW+lKdAJA5w56qASu9EiUmBXbhW6eAlSEUBid+KVESGqQygFFg+awt/c8K+qobVM6M/u3SbIy0NyUQ==, tarball: https://npm.jsr.io/~/11/@jsr/std__async/1.0.14.tgz}
 
-  '@jsr/std__data-structures@1.0.6':
-    resolution: {integrity: sha512-Ejc8mHLuoYxXLu2zPquvqijdgQ19OV+1DdVDrLc/Cg+tiuGh4Dq2FSnLiPINh4lO1AJ3XcZcYPx38RxdsZcCOg==, tarball: https://npm.jsr.io/~/11/@jsr/std__data-structures/1.0.6.tgz}
+  '@jsr/std__data-structures@1.0.9':
+    resolution: {integrity: sha512-+mT4Nll6fx+CPNqrlC+huhIOYNSMS+KUdJ4B8NujiQrh/bq++ds5PXpEsfV5EPR+YuWcuDGG0P1DE+Rednd7Wg==, tarball: https://npm.jsr.io/~/11/@jsr/std__data-structures/1.0.9.tgz}
 
-  '@jsr/std__fs@1.0.14':
-    resolution: {integrity: sha512-2wOU9c5nkXRF+UQrpk9ld3cG/il+v3yCyz3aRKorn7BpWx7ENJzwM/xcsQ1t1WUqRoRHCtRCdG4amC73v8qExA==, tarball: https://npm.jsr.io/~/11/@jsr/std__fs/1.0.14.tgz}
+  '@jsr/std__fs@1.0.19':
+    resolution: {integrity: sha512-TEjyE8g+46jPlu7dJHLrwc8NMGl8zfG+JjWxyNQyDbxP0RtqZ4JmYZfR9vy4RWYWJQbLpw6Kbt2n+K/2zAO/JA==, tarball: https://npm.jsr.io/~/11/@jsr/std__fs/1.0.19.tgz}
 
-  '@jsr/std__internal@1.0.5':
-    resolution: {integrity: sha512-W2aN7UypJJ6EkfyXt5hBeIijBb8CmZk0jdjCzhOROr0SrXsXZ/V/9Qu1N0NxumFauPDAJz9NcP1mmZ9ZVSXwpQ==, tarball: https://npm.jsr.io/~/11/@jsr/std__internal/1.0.5.tgz}
+  '@jsr/std__internal@1.0.10':
+    resolution: {integrity: sha512-fmD6yKep/sMnB2yPQU/REZG7Z4N9SZwcUBNnceo4QkXk67l3JEfxHoROQ/YHeVSOmq6x55Ra6nuMjz2ib3nj3g==, tarball: https://npm.jsr.io/~/11/@jsr/std__internal/1.0.10.tgz}
 
-  '@jsr/std__path@1.0.8':
-    resolution: {integrity: sha512-eNBGlh/8ZVkMxtFH4bwIzlAeKoHYk5in4wrBZhi20zMdOiuX4QozP4+19mIXBT2lzHDjhuVLyECbhFeR304iDg==, tarball: https://npm.jsr.io/~/11/@jsr/std__path/1.0.8.tgz}
+  '@jsr/std__path@1.1.2':
+    resolution: {integrity: sha512-5hkOR1s5M7am02Bn9KS+SNMNwUSivz7t7/w2HBhFIfO7Eh8+mWilaZ+1tdanV9aaSHr4c99Zo4Da+cCSuzUOdA==, tarball: https://npm.jsr.io/~/11/@jsr/std__path/1.1.2.tgz}
 
-  '@jsr/std__testing@1.0.9':
-    resolution: {integrity: sha512-aTVkTPvrBwbs/K9kF/nLrjYpsp/PrGwj3NwU+KU2sLuxmgmPyNW+JfHfZl7kL9jwf1Cfo1wGqleNQSjj94DtUg==, tarball: https://npm.jsr.io/~/11/@jsr/std__testing/1.0.9.tgz}
+  '@jsr/std__testing@1.0.15':
+    resolution: {integrity: sha512-NgQuXxTEG4ecbh2fzYbkJWJoBgPXwbv6bdsrAYSOeLpX2d+TROEzpErbWQXHi/yxZy/FNn9IF548ZDAqMZxi/g==, tarball: https://npm.jsr.io/~/11/@jsr/std__testing/1.0.15.tgz}
 
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
@@ -1556,30 +1556,35 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@jsr/std__assert@1.0.11':
+  '@jsr/std__assert@1.0.14':
     dependencies:
-      '@jsr/std__internal': 1.0.5
+      '@jsr/std__internal': 1.0.10
 
-  '@jsr/std__async@1.0.11': {}
+  '@jsr/std__async@1.0.14': {}
 
-  '@jsr/std__data-structures@1.0.6': {}
-
-  '@jsr/std__fs@1.0.14':
+  '@jsr/std__data-structures@1.0.9':
     dependencies:
-      '@jsr/std__path': 1.0.8
+      '@jsr/std__assert': 1.0.14
 
-  '@jsr/std__internal@1.0.5': {}
-
-  '@jsr/std__path@1.0.8': {}
-
-  '@jsr/std__testing@1.0.9':
+  '@jsr/std__fs@1.0.19':
     dependencies:
-      '@jsr/std__assert': 1.0.11
-      '@jsr/std__async': 1.0.11
-      '@jsr/std__data-structures': 1.0.6
-      '@jsr/std__fs': 1.0.14
-      '@jsr/std__internal': 1.0.5
-      '@jsr/std__path': 1.0.8
+      '@jsr/std__internal': 1.0.10
+      '@jsr/std__path': 1.1.2
+
+  '@jsr/std__internal@1.0.10': {}
+
+  '@jsr/std__path@1.1.2':
+    dependencies:
+      '@jsr/std__internal': 1.0.10
+
+  '@jsr/std__testing@1.0.15':
+    dependencies:
+      '@jsr/std__assert': 1.0.14
+      '@jsr/std__async': 1.0.14
+      '@jsr/std__data-structures': 1.0.9
+      '@jsr/std__fs': 1.0.19
+      '@jsr/std__internal': 1.0.10
+      '@jsr/std__path': 1.1.2
 
   '@napi-rs/wasm-runtime@0.2.12':
     dependencies:
