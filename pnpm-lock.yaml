@@ -20,7 +20,7 @@ importers:
         version: 2.1.0
       '@assertive-ts/sinon':
         specifier: 1.0.0
-        version: 1.0.0(@assertive-ts/core@2.1.0)(sinon@20.0.0)
+        version: 1.0.0(@assertive-ts/core@2.1.0)(sinon@21.0.0)
       '@eslint/js':
         specifier: 9.23.0
         version: 9.23.0
@@ -64,8 +64,8 @@ importers:
         specifier: 7.8.2
         version: 7.8.2
       sinon:
-        specifier: 20.0.0
-        version: 20.0.0
+        specifier: 21.0.0
+        version: 21.0.0
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1296,8 +1296,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  sinon@20.0.0:
-    resolution: {integrity: sha512-+FXOAbdnj94AQIxH0w1v8gzNxkawVvNqE3jUzRLptR71Oykeu2RrQXXl/VQjKay+Qnh73fDt/oDfMo6xMeDQbQ==}
+  sinon@21.0.0:
+    resolution: {integrity: sha512-TOgRcwFPbfGtpqvZw+hyqJDvqfapr1qUlOizROIk4bBLjlsjlB00Pg6wMFXNtJRpu+eCZuVOaLatG7M8105kAw==}
 
   slice-ansi@5.0.0:
     resolution: {integrity: sha512-FC+lgizVPfie0kkhqUScwRu1O/lF6NOgJmlCgK+/LYxDCTk8sGelYaHDhFcDN+Sn3Cv+3VSa4Byeo+IMCzpMgQ==}
@@ -1471,12 +1471,12 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@assertive-ts/sinon@1.0.0(@assertive-ts/core@2.1.0)(sinon@20.0.0)':
+  '@assertive-ts/sinon@1.0.0(@assertive-ts/core@2.1.0)(sinon@21.0.0)':
     dependencies:
       '@assertive-ts/core': 2.1.0
       fast-deep-equal: 3.1.3
     optionalDependencies:
-      sinon: 20.0.0
+      sinon: 21.0.0
 
   '@emnapi/core@1.5.0':
     dependencies:
@@ -2813,7 +2813,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sinon@20.0.0:
+  sinon@21.0.0:
     dependencies:
       '@sinonjs/commons': 3.0.1
       '@sinonjs/fake-timers': 13.0.5
