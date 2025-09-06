@@ -39,9 +39,7 @@ export class SubscribableValueErrorState<
 
   protected _subject: Subject<ValueErrorState<T, E>> | undefined;
   protected get subject(): Subject<ValueErrorState<T, E>> {
-    if (!this._subject) {
-      this._subject = this._subjectFactory(this.valueErrorState);
-    }
+    this._subject ??= this._subjectFactory(this.valueErrorState);
     return this._subject;
   }
 
