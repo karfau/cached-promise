@@ -26,7 +26,7 @@
     "@assertive-ts/core": "2.1.0",
     "@assertive-ts/sinon": "1.0.0",
     "@eslint/js": "9.23.0",
-    "@std/testing": "npm:@jsr/std__testing@1.0.9",
+    "@std/testing": "npm:@jsr/std__testing@1.0.15",
     "@types/lodash": "4.17.16",
     "@types/node": "22.13.14",
     "@types/sinon": "17.0.4",
