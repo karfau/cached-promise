@@ -1,0 +1,24 @@
+{
+  "name": "@karfau/cached-promise",
+  "version": "0.2.0",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "exclude": [
+    // workflow files
+    ".github",
+    // "hidden" config files that are part of the repo
+    ".*",
+    "test",
+    // *.test.ts files they show as empty files in the JSR file explorer
+    "src/**/*.test.ts",
+    // eslint config
+    "eslint*",
+    // all the little config files including package.json containing potential npm config
+    "*.json",
+    // jsr.jsonc is still published
+    "*.jsonc",
+    // dependencies are set to pinned versions in the files:
+    // https://jsr.io/@karfau/cached-promise/0.1.0/src/Subject.ts#L2
+    "pnpm-lock.yaml",
+  ],
+}

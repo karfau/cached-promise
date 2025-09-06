@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // https://github.com/denoland/deno/issues/26485
+    // https://github.com/denoland/deno/issues/26485 =(
     "isolatedDeclarations": false,
   },
 }
