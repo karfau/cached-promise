@@ -18,7 +18,7 @@ import {
 /**
  * Manages different ValueErrorState tuples over time, and provides synchronous access to the current value, error and state.
  *
- * The subclasses differ in hpw the promise(s) triggering the changed values are created.
+ * The subclasses differ in how the promise(s) triggering the changed values are created.
  */
 export class ValueErrorStates<T, E = unknown> {
   constructor(readonly initial: Readonly<T>) {
