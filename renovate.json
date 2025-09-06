@@ -22,11 +22,13 @@
   "vulnerabilityAlerts": {
     "labels": ["security"],
     "schedule": ["before 8am"],
-    "prConcurrentLimit": 3
+    "prConcurrentLimit": 3,
+    "automerge": true
   },
   "addLabels": ["dependencies"],
   "packageRules": [
     {"matchUpdateTypes": ["pin"], "prPriority": 10, "automerge": true},
+    {"matchUpdateTypes": ["minor"], "automerge": true},
     {"matchUpdateTypes": ["major"], "dependencyDashboardApproval": true},
     {"matchPackageNames": ["node"], "rangeStrategy": "replace"},
     {
