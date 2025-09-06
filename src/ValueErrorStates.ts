@@ -1,18 +1,18 @@
 import {
-  Fulfilled,
+  type Fulfilled,
   isFulfilled,
   isLoading,
   isPending,
   isReady,
   isRejected,
   isSettled,
-  Loading,
-  Pending,
-  PState,
+  type Loading,
+  type Pending,
+  type PState,
   Ready,
-  Rejected,
-  Settled,
-  ValueErrorState,
+  type Rejected,
+  type Settled,
+  type ValueErrorState,
 } from './ValueErrorState.ts';
 
 /**

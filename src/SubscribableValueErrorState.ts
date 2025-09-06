@@ -1,5 +1,5 @@
 import type {Subject, SubjectFactory, Subscribable} from './Subject.ts';
-import {
+import type {
   Fulfilled,
   Loading,
   Pending,
