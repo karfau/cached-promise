@@ -19,8 +19,7 @@ import {usePlugin} from '@assertive-ts/core';
 import {SinonPlugin} from '@assertive-ts/sinon';
 usePlugin(SinonPlugin);
 
-// eslint-disable-next-line @typescript-eslint/no-inferrable-types
-export const isDeno: boolean = !!globalThis.Deno;
+export const isDeno: boolean = 'Deno' in globalThis;
 type Fn = () => void;
 export const describe = (message: string, fn: Fn): void => {
   if (isDeno) {

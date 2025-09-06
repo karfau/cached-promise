@@ -11,6 +11,10 @@ import {
 import {ValueErrorStates} from './ValueErrorStates.ts';
 
 /**
+ * Manages different ValueErrorState tuples over time, and provides synchronous access to the current value, error and state.
+ *
+ * The subclasses differ in how the promise(s) triggering the changed values are created.
+ *
  * By providing a factory for a `Subject` (`Observer` + `Subscribable`),
  * updates of `valueErrorState` can be subscribed to.
  *
@@ -20,11 +24,17 @@ export class SubscribableValueErrorState<
   T,
   E = unknown,
 > extends ValueErrorStates<T, E> {
+  override readonly initial: Readonly<T>;
+
+  protected _subjectFactory: SubjectFactory<ValueErrorState<T>>;
+
   constructor(
-    override readonly initial: Readonly<T>,
-    protected _subjectFactory: SubjectFactory<ValueErrorState<T>>,
+    initial: Readonly<T>,
+    _subjectFactory: SubjectFactory<ValueErrorState<T>>,
   ) {
     super(initial);
+    this._subjectFactory = _subjectFactory;
+    this.initial = initial;
   }
 
   protected _subject: Subject<ValueErrorState<T, E>> | undefined;
