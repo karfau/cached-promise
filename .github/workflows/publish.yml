@@ -25,6 +25,7 @@ jobs:
       - run: pnpm test:node
       - run: pnpm lint
       - run: pnpm format:check
+      - run: pnpm pubdry
 
   publish:
     if: github.event_name == 'push' && github.ref_name == 'main'
@@ -44,4 +45,4 @@ jobs:
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-      - run: deno publish
+      - run: pnpm pub

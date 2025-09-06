@@ -7,12 +7,14 @@
     "dev": "deno test --watch",
     "test": "deno test 'src/**/*.test.ts'",
     "test:node": "node --import tsx --test 'src/**/*.test.ts'",
-    "types": "deno check --config=deno.jsonc '**/*.ts' && tsc",
+    "types": "(set -x; deno check '**/*.ts' && tsc --listFiles)",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pub": "deno publish --config jsr.jsonc --no-check",
+    "pubdry": "pnpm pub --dry-run --allow-dirty"
   },
   "keywords": [],
   "author": "Christian Bewernitz",
