@@ -32,5 +32,9 @@ export default tseslint.config(eslint.configs.recommended, {
         reportUsedIgnorePattern: true,
       },
     ],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {fixStyle: 'inline-type-imports'},
+    ],
   },
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "deno test --watch",
     "test": "deno test 'src/**/*.test.ts'",
-    "test:node": "node --import tsx --test 'src/**/*.test.ts'",
+    "test:node": "node --test 'src/**/*.test.ts'",
     "types": "(set -x; deno check '**/*.ts' && tsc --listFiles)",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -40,7 +40,6 @@
     "prettier": "3.5.3",
     "rxjs": "7.8.2",
     "sinon": "19.0.5",
-    "tsx": "4.19.3",
     "typescript": "5.8.2",
     "typescript-eslint": "8.27.0"
   },
