@@ -24,11 +24,17 @@ export class SubscribableValueErrorState<
   T,
   E = unknown,
 > extends ValueErrorStates<T, E> {
+  override readonly initial: Readonly<T>;
+
+  protected _subjectFactory: SubjectFactory<ValueErrorState<T>>;
+
   constructor(
-    override readonly initial: Readonly<T>,
-    protected _subjectFactory: SubjectFactory<ValueErrorState<T>>,
+    initial: Readonly<T>,
+    _subjectFactory: SubjectFactory<ValueErrorState<T>>,
   ) {
     super(initial);
+    this._subjectFactory = _subjectFactory;
+    this.initial = initial;
   }
 
   protected _subject: Subject<ValueErrorState<T, E>> | undefined;

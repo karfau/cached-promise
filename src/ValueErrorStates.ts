@@ -21,7 +21,10 @@ import {
  * The subclasses differ in how the promise(s) triggering the changed values are created.
  */
 export class ValueErrorStates<T, E = unknown> {
-  constructor(readonly initial: Readonly<T>) {
+  readonly initial: Readonly<T>;
+
+  constructor(initial: Readonly<T>) {
+    this.initial = initial;
     this.#valueErrorState = this.READY = Ready(initial);
   }
   /**
