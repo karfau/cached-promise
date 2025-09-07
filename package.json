@@ -28,7 +28,7 @@
     "@eslint/js": "9.34.0",
     "@std/testing": "npm:@jsr/std__testing@1.0.15",
     "@types/lodash": "4.17.20",
-    "@types/node": "22.13.14",
+    "@types/node": "22.18.1",
     "@types/sinon": "17.0.4",
     "eslint": "9.34.0",
     "eslint-import-resolver-typescript": "4.4.4",
