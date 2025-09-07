@@ -1,4 +1,5 @@
 {
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
   "name": "@karfau/cached-promise",
   "version": "0.2.0",
   "license": "MIT",

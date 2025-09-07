@@ -38,6 +38,7 @@
     "lint-staged": "16.1.6",
     "lodash": "4.17.21",
     "prettier": "3.5.3",
+    "release-please": "17.1.2",
     "rxjs": "7.8.2",
     "sinon": "21.0.0",
     "typescript": "5.9.2",
@@ -52,7 +53,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*": "prettier --write"
+    "*": "prettier --ignore-unknown --write"
   },
   "type": "module",
   "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
@@ -66,7 +67,8 @@
       "lodash.get": "./test/lodash.get"
     },
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "unrs-resolver"
     ]
   }
 }
