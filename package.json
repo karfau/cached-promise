@@ -37,7 +37,7 @@
     "jsr": "0.13.5",
     "lint-staged": "16.1.6",
     "lodash": "4.17.21",
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "release-please": "17.1.2",
     "rxjs": "7.8.2",
     "sinon": "21.0.0",
