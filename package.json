@@ -1,6 +1,6 @@
 {
   "name": "cached-promise",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "subscribe to changes to the state of promises over time and cache the result of async calls",
   "main": "src/index.ts",
   "scripts": {
