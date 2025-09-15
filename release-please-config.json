@@ -10,7 +10,8 @@
       "prerelease": false,
       "extra-files": [{"path": "jsr.jsonc", "type": "generic"}],
       "include-v-in-tag": false,
-      "include-component-in-tag": false
+      "include-component-in-tag": false,
+      "always-update": true
     }
   }
 }
