@@ -26,8 +26,13 @@ jobs:
         with:
           name: 'coverage'
           path: 'coverage'
-      - run: deno coverage >> $GITHUB_STEP_SUMMARY
-      - run: deno coverage --detailed >> $GITHUB_STEP_SUMMARY
+      - run: |
+          echo '## Code Coverage (Deno)' >> $GITHUB_STEP_SUMMARY
+          deno coverage >> $GITHUB_STEP_SUMMARY
+          echo '### Details:' >> $GITHUB_STEP_SUMMARY  
+          deno coverage --detailed >> $GITHUB_STEP_SUMMARY
+        env:
+          NO_COLOR: 1
       - run: pnpm lint
       - run: pnpm knip
       - run: pnpm format:check
