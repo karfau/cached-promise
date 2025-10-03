@@ -21,6 +21,7 @@ usePlugin(SinonPlugin);
 
 export const isDeno: boolean = 'Deno' in globalThis;
 type Fn = () => void;
+type AsyncFn = () => Promise<void>;
 export const describe = (message: string, fn: Fn): void => {
   if (isDeno) {
     describeD(message, fn);
@@ -28,7 +29,7 @@ export const describe = (message: string, fn: Fn): void => {
     void describeN(message, fn);
   }
 };
-export const it = (message: string, fn: Fn): void => {
+export const it = (message: string, fn: Fn | AsyncFn): void => {
   if (isDeno) {
     itD(message, fn);
   } else {
