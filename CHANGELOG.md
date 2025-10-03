@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/karfau/cached-promise/compare/0.2.2...0.2.3) (2025-10-03)
+
+
+### Bug Fixes
+
+* export SubscribablePromises and AsyncValueErrorState ([#74](https://github.com/karfau/cached-promise/issues/74)) ([70f3d0d](https://github.com/karfau/cached-promise/commit/70f3d0dd50e931c961ef03eb0993a319bba7cf24))
+
 ## [0.2.2](https://github.com/karfau/cached-promise/compare/0.2.1...0.2.2) (2025-10-03)
 
 
