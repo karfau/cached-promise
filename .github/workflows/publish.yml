@@ -22,8 +22,8 @@ jobs:
       - run: pnpm i --frozen-lockfile
       - run: pnpm types
       - run: pnpm test
-      - run: pnpm test:node
       - run: pnpm lint
+      - run: pnpm knip
       - run: pnpm format:check
       - run: pnpm pubdry
 
