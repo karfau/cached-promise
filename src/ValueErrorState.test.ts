@@ -30,7 +30,7 @@ it('should correctly create Loading', () => {
   expect(isPending(state)).toBe(true);
   expect(isSettled(state)).toBe(false);
 });
-it('should correctly creat Fulfilled', () => {
+it('should correctly create Fulfilled', () => {
   const input = {};
   const [value, error, state] = Fulfilled(input);
   expect(value).toBe(input);
@@ -39,7 +39,7 @@ it('should correctly creat Fulfilled', () => {
   expect(isSettled(state)).toBe(true);
   expect(isPending(state)).toBe(false);
 });
-it('should correctly creat Rejected', () => {
+it('should correctly create Rejected', () => {
   const input = {};
   const reason = 'no way';
   const [value, error, state] = Rejected(input, reason);
