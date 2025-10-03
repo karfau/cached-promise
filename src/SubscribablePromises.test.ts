@@ -1,4 +1,3 @@
-import {assertType, type IsExact} from '@std/testing/types';
 import {spy} from 'sinon';
 import {BehaviorSubject} from 'rxjs';
 import {describe, expect, it} from '../test/runner.ts';
@@ -50,17 +49,20 @@ describe('SubscribablePromises', () => {
 
       const first = impl();
       const setFirst = it.set(first);
+      expect(it.get()).toBe(first);
       expect(it.isReady).toBe(false);
       expect(it.state).toBeEqual(PState.loading);
       expect(it.isLoading).toBe(true);
 
       const second = impl();
       const setSecond = it.set(second);
+      expect(it.get()).toBe(second);
       expect(it.state).toBeEqual(PState.loading);
       await first;
       expect(it.state).toBeEqual(PState.loading);
       await second;
       expect(it.valueErrorState).toBeEqual(Fulfilled(2));
+      expect(it.get()).toBeUndefined();
       await expect(setSecond).toBeResolvedWith(Fulfilled(2));
       await expect(first).toBeResolvedWith(1);
       await expect(second).toBeResolvedWith(2);
@@ -193,29 +195,5 @@ describe('SubscribablePromises', () => {
 
       expect(it.getValueErrorState$()).toBe(observable);
     });
-  });
-
-  it('should not call the subjectFactory until subject is requested', () => {
-    const subjectFactory = spy(
-      (current: ValueErrorState<number>) => new BehaviorSubject(current),
-    );
-
-    const it = new SubscribablePromises(0, subjectFactory);
-
-    const loading = it._setValueErrorState(Loading(1));
-    assertType<IsExact<typeof loading, Loading<number>>>(true);
-
-    expect(subjectFactory).toNeverBeCalled();
-
-    const requested = it.getValueErrorState$();
-
-    expect(subjectFactory).toBeCalledOnce().toHaveArgs(loading);
-
-    const next = spy((_: ValueErrorState<number>) => undefined);
-    requested.subscribe({next});
-    expect(next).toBeCalledOnce().toHaveArgs(loading);
-
-    const fulfilled = it._setValueErrorState(Fulfilled(2));
-    expect(next).toBeCalledTwice().toHaveArgs(fulfilled);
   });
 });

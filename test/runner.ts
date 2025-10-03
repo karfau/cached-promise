@@ -1,3 +1,5 @@
+// deno-coverage-ignore-file
+/* node:coverage disable */
 import {
   describe as describeD,
   it as itD,
