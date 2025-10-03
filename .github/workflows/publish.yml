@@ -22,6 +22,17 @@ jobs:
       - run: pnpm i --frozen-lockfile
       - run: pnpm types
       - run: pnpm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 'coverage'
+          path: 'coverage'
+      - run: |
+          echo '## Code Coverage (Deno)' >> $GITHUB_STEP_SUMMARY
+          deno coverage >> $GITHUB_STEP_SUMMARY
+          echo '### Details:' >> $GITHUB_STEP_SUMMARY  
+          deno coverage --detailed >> $GITHUB_STEP_SUMMARY
+        env:
+          NO_COLOR: 1
       - run: pnpm lint
       - run: pnpm knip
       - run: pnpm format:check
