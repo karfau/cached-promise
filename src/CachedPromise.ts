@@ -66,7 +66,7 @@ export class CachedPromise<T, E = unknown> extends SubscribableValueErrorState<
         this.cache = p;
         this._setValueErrorState(Loading(this.value));
       }
-      const awaited = await this.cache;
+      const awaited = await p;
       if (this.cache === p && this.isLoading) {
         return this._setValueErrorState(Fulfilled(awaited));
       }
