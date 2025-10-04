@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/karfau/cached-promise/compare/0.2.3...0.2.4) (2025-10-04)
+
+
+### Features
+
+* implement basic CachedPromise ([#79](https://github.com/karfau/cached-promise/issues/79)) ([03c049e](https://github.com/karfau/cached-promise/commit/03c049e0ed2cb02eac0541edd456bf05dd879edf))
+
 ## [0.2.3](https://github.com/karfau/cached-promise/compare/0.2.2...0.2.3) (2025-10-03)
 
 
