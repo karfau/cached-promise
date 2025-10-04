@@ -14,7 +14,7 @@
     "types": "pnpm run --aggregate-output /^types:.*/",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "knip": "knip",
+    "knip": "knip && knip --production",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepare": "husky",
