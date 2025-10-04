@@ -19,6 +19,10 @@ export default tseslint.config(eslint.configs.recommended, {
     importPlugin.flatConfigs.typescript,
   ],
   rules: {
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {fixStyle: 'inline-type-imports'},
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -31,10 +35,6 @@ export default tseslint.config(eslint.configs.recommended, {
         ignoreRestSiblings: true,
         reportUsedIgnorePattern: true,
       },
-    ],
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      {fixStyle: 'inline-type-imports'},
     ],
   },
 });
