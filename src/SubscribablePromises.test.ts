@@ -9,6 +9,7 @@ import {
   Ready,
   type ValueErrorState,
 } from './ValueErrorState.ts';
+import {behaviorSubject} from '../test/behaviorSubject.ts';
 
 const givenAResolvedSubscribablePromises = async <T>(
   initial: T,
@@ -130,13 +131,11 @@ describe('SubscribablePromises', () => {
     });
     it('should be ready >-set-> loading(1) >-reject-> rejected >-set-> loading(2) >-reject-> rejected', async () => {
       const initial = false;
-      const subjectFactory = (current: ValueErrorState<boolean>) =>
-        new BehaviorSubject(current);
       const reason = new Error('promise rejected in test');
       const impl = async () => Promise.reject(reason);
       const onError = spy();
 
-      const it = new SubscribablePromises(initial, subjectFactory);
+      const it = new SubscribablePromises(initial, behaviorSubject);
 
       const first = it.set(impl(), {onError});
       expect(it.valueErrorState).toBeEqual(Loading(initial));
@@ -154,10 +153,10 @@ describe('SubscribablePromises', () => {
   });
   describe('valueErrorState$', () => {
     it('should push all possible states', async () => {
-      const subjectFactory = (current: ValueErrorState<undefined>) =>
-        new BehaviorSubject(current);
-
-      const it = new SubscribablePromises<undefined>(undefined, subjectFactory);
+      const it = new SubscribablePromises<undefined>(
+        undefined,
+        behaviorSubject,
+      );
 
       const states: PState[] = [];
       const first = it.set(Promise.resolve(undefined)); // -> loading(1)
@@ -189,9 +188,10 @@ describe('SubscribablePromises', () => {
       ] as const);
     });
     it('should be stable', () => {
-      const subjectFactory = (current: ValueErrorState<undefined>) =>
-        new BehaviorSubject(current);
-      const it = new SubscribablePromises(undefined, subjectFactory);
+      const it = new SubscribablePromises<undefined>(
+        undefined,
+        behaviorSubject,
+      );
 
       const observable = it.getValueErrorState$();
 
