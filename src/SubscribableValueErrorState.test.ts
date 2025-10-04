@@ -1,15 +1,13 @@
 import {assertType, type IsExact} from '@std/testing/types';
 import {spy} from 'sinon';
-import {BehaviorSubject} from 'rxjs';
 import {describe, it, expect} from '../test/runner.ts';
 import {SubscribableValueErrorState} from './SubscribableValueErrorState.ts';
 import {Fulfilled, Loading, type ValueErrorState} from './ValueErrorState.ts';
+import {behaviorSubject} from '../test/behaviorSubject.ts';
 
 describe('SubscribableValueErrorState', () => {
   it('should not call the subjectFactory until subject is requested', () => {
-    const subjectFactory = spy(
-      (current: ValueErrorState<number>) => new BehaviorSubject(current),
-    );
+    const subjectFactory = spy(behaviorSubject<number>);
 
     const it = new SubscribableValueErrorState(0, subjectFactory);
 
