@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "deno test --watch",
+    "test:bun": "bun test",
     "test:deno": "deno test --coverage 'src/**/*.test.ts'",
     "test:node": "node --test 'src/**/*.test.ts'",
     "test": "pnpm run --aggregate-output /^test:.*/",
