@@ -16,7 +16,7 @@ jobs:
           deno-version: 2.5.4
       - uses: oven-sh/setup-bun@v2
       - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
           cache: pnpm
@@ -49,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
           cache: pnpm
