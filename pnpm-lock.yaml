@@ -28,8 +28,8 @@ importers:
         specifier: npm:@jsr/std__testing@1.0.16
         version: '@jsr/std__testing@1.0.16'
       '@types/node':
-        specifier: 22.19.2
-        version: 22.19.2
+        specifier: 22.19.3
+        version: 22.19.3
       '@types/sinon':
         specifier: 17.0.4
         version: 17.0.4
@@ -50,7 +50,7 @@ importers:
         version: 0.13.5
       knip:
         specifier: 5.73.3
-        version: 5.73.3(@types/node@22.19.2)(typescript@5.9.3)
+        version: 5.73.3(@types/node@22.19.3)(typescript@5.9.3)
       lint-staged:
         specifier: 16.2.7
         version: 16.2.7
@@ -400,8 +400,8 @@ packages:
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
-  '@types/node@22.19.2':
-    resolution: {integrity: sha512-LPM2G3Syo1GLzXLGJAKdqoU35XvrWzGJ21/7sgZTUpbkBaOasTj8tjwn6w+hCkqaa1TfJ/w67rJSwYItlJ2mYw==}
+  '@types/node@22.19.3':
+    resolution: {integrity: sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2457,7 +2457,7 @@ snapshots:
 
   '@types/minimist@1.2.5': {}
 
-  '@types/node@22.19.2':
+  '@types/node@22.19.3':
     dependencies:
       undici-types: 6.21.0
 
@@ -3581,10 +3581,10 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  knip@5.73.3(@types/node@22.19.2)(typescript@5.9.3):
+  knip@5.73.3(@types/node@22.19.3)(typescript@5.9.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
-      '@types/node': 22.19.2
+      '@types/node': 22.19.3
       fast-glob: 3.3.3
       formatly: 0.3.0
       jiti: 2.6.1
