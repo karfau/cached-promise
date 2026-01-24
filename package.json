@@ -42,7 +42,7 @@
     "jsr": "0.13.5",
     "knip": "5.82.1",
     "lint-staged": "16.2.7",
-    "prettier": "3.8.0",
+    "prettier": "3.8.1",
     "release-please": "17.2.0",
     "rxjs": "7.8.2",
     "sinon": "21.0.0",
