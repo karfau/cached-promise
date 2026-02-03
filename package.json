@@ -33,7 +33,7 @@
     "@assertive-ts/sinon": "1.0.0",
     "@eslint/js": "9.39.2",
     "@std/testing": "npm:@jsr/std__testing@1.0.17",
-    "@types/node": "22.19.7",
+    "@types/node": "22.19.8",
     "@types/sinon": "17.0.4",
     "eslint": "9.39.2",
     "eslint-import-resolver-typescript": "4.4.4",
