@@ -46,8 +46,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       jsr:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.14.3
+        version: 0.14.3
       knip:
         specifier: 5.83.1
         version: 5.83.1(@types/node@22.19.11)(typescript@5.9.3)
@@ -1434,8 +1434,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  jsr@0.14.2:
-    resolution: {integrity: sha512-yrnhXNyTqX7RWym4SVbGX+P9U63VRRN0llSN4psz4IEoGw20alehT0PX71ecmY5vMxNXtCJ16oWlnfaoVg9wdA==}
+  jsr@0.14.3:
+    resolution: {integrity: sha512-PGxnDepx7vwJoZQe2SHbyBiFfpGwsOKmX4kn/wZZqfMafV7fjXqTxSaX6lp9QHYkSTLKkER+P/wmrZY3gVJNzg==}
     hasBin: true
 
   keyv@4.5.4:
@@ -3586,7 +3586,7 @@ snapshots:
       '@jsep-plugin/regex': 1.0.4(jsep@1.4.0)
       jsep: 1.4.0
 
-  jsr@0.14.2:
+  jsr@0.14.3:
     dependencies:
       node-stream-zip: 1.15.0
       semiver: 1.1.0
