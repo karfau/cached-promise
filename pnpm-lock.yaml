@@ -58,8 +58,8 @@ importers:
         specifier: 3.8.1
         version: 3.8.1
       release-please:
-        specifier: 17.2.0
-        version: 17.2.0
+        specifier: 17.2.1
+        version: 17.2.1
       rxjs:
         specifier: 7.8.2
         version: 7.8.2
@@ -1731,8 +1731,8 @@ packages:
     resolution: {integrity: sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==}
     engines: {node: '>= 0.4'}
 
-  release-please@17.2.0:
-    resolution: {integrity: sha512-DIB8gXH+GBwy1MvkJ/xUceVPW+10OOQagNBaOB/V3B8hHbfsVbQjwEL0Hu6zTRsqve9wRvqE48mKtwjaXIxupA==}
+  release-please@17.2.1:
+    resolution: {integrity: sha512-NJnpDb4D/HOyYinGNEP/gU8NAvHMrMC4HIju31c2AbKHdHXeZkiiKSCKZlf60iT1ejv/JgGG3vVHx/78VCI43Q==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3930,7 +3930,7 @@ snapshots:
       gopd: 1.2.0
       set-function-name: 2.0.2
 
-  release-please@17.2.0:
+  release-please@17.2.1:
     dependencies:
       '@conventional-commits/parser': 0.4.1
       '@google-automations/git-file-utils': 3.0.0
