@@ -40,7 +40,7 @@
     "eslint-plugin-import": "2.32.0",
     "husky": "9.1.7",
     "jsr": "0.14.3",
-    "knip": "5.85.0",
+    "knip": "5.86.0",
     "lint-staged": "16.3.3",
     "prettier": "3.8.1",
     "release-please": "17.3.0",
