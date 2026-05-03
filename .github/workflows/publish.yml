@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: denoland/setup-deno@v2
+      - uses: denoland/setup-deno@v2.0.4
         with:
           deno-version: 2.7.14
       - uses: oven-sh/setup-bun@v2
@@ -54,7 +54,7 @@ jobs:
           node-version-file: .node-version
           cache: pnpm
       - run: pnpm i --production --frozen-lockfile --ignore-scripts
-      - uses: denoland/setup-deno@v2
+      - uses: denoland/setup-deno@v2.0.4
         with:
           deno-version: 2.7.14
       - run: pnpm pub
