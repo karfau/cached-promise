@@ -41,7 +41,7 @@
     "husky": "9.1.7",
     "jsr": "0.14.3",
     "knip": "5.88.1",
-    "lint-staged": "16.3.3",
+    "lint-staged": "16.4.0",
     "prettier": "3.8.3",
     "release-please": "17.3.0",
     "rxjs": "7.8.2",
