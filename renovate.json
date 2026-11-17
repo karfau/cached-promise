@@ -16,8 +16,10 @@
   "prConcurrentLimit": 1,
   "updateNotScheduled": false,
   "configMigration": true,
-  "dependencyDashboardTitle": "Dependencies Dashboard (Renovate Bot)",
-  "dependencyDashboardFooter": "- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository\n- The renovate logs can be found at <https://developer.mend.io>",
+  "dependencyDashboard": {
+    "title": "Dependencies Dashboard (Renovate Bot)",
+    "footer": "- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository\n- The renovate logs can be found at <https://developer.mend.io>"
+  },
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
     "labels": ["security"],
